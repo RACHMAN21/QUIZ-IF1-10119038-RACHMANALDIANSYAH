@@ -15,7 +15,7 @@ package id.rachman.rachmanaldiansyah;
  *                     sup-class
  * 
  */
-
+        
 public interface ServiceItem {
     
     public void displayService();

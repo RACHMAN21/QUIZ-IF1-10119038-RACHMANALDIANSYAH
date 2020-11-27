@@ -28,6 +28,7 @@ public class ServicePrice implements ServiceItem {
         this.priceService = priceService;
     }
     
+    @Override
     public void displayService() {
         System.out.println("#*************************#");
         System.out.println("#***Rock n Roll Haircut***#");
@@ -41,18 +42,29 @@ public class ServicePrice implements ServiceItem {
     
     @Override
     public float getPrice(int serviceItem) {
-        return serviceItem;
+        if(serviceItem == 1) {
+            priceService = 45000;
+        } else if (serviceItem == 2) {
+            priceService = 55000;
+        } else if (serviceItem == 3) {
+            priceService = 15000;
+        }
+        
+        return priceService;
     }
     
     @Override
     public boolean checkMemberStatus(String statusMember) {
+        boolean isMember = false;
         if(statusMember.equals("Yes")) {
-            
+            isMember = true;
         } else if(statusMember.equals("No")) {
-            statusMember = "Silahkan isi data dengan benar!";
+            isMember = false; 
+        } else {
+            System.out.println("Masukkan data dengan benar!");
         }
         
-        return statusMember;
+        return isMember;
     }
     
     @Override

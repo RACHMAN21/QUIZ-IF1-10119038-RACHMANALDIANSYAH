@@ -16,7 +16,7 @@ package id.rachman.rachmanaldiansyah;
  * 
  */
 
-public class Customer extends ServicePrice {
+public class Customer extends ServicePrice implements CustomerInvoice {
     private String name;
     private String email;
     private boolean member;
@@ -46,6 +46,13 @@ public class Customer extends ServicePrice {
     }
     
     public String currentTime() {
+        String hari[] = {"Minggu","Senin","Selasa","Rabu","Kamis","Jum'at","Sabtu"};
+        Date sekarang = new Date();
         
+    }
+
+    @Override
+    public String currentTimer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

@@ -16,6 +16,8 @@ package id.rachman.rachmanaldiansyah;
  * 
  */
 
+import.java.util.Date;
+
 public interface CustomerInvoice {
     
     public String currentTimer();
