@@ -4,22 +4,14 @@
  * and open the template in the editor.
  */
 package id.rachman.rachmanaldiansyah;
-
-/**
- *
+/*
  * @author
  * NAMA  : Rachman Aldiansyah
  * KELAS : IF-1
  * NIM   : 10119038
- * Deskripsi Program : program ini berisi interface CustomerInvoice yang merupakan
- *                     sup-class dari Customer
- * 
+ * Deskripsi Program : program ini berisi interface CustomerInvoice yang merupakan sup-class dari class Customer
+ *                     yang merupakan sub-class
  */
-
-import.java.util.Date;
-
 public interface CustomerInvoice {
-    
-    public String currentTimer();
-
+    public String currentTime();
 }
